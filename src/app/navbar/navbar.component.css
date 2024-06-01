@@ -1,0 +1,68 @@
+@font-face {
+    font-family: din;
+    src: url("/assets/DIN-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 350px; /* Fixed width for the sidebar */
+    height: 100%; /* Full viewport height */
+    background-color: #f4efe4; /* White background for the sidebar */
+    font-family: din;
+}
+
+.logo{
+    padding: 12px;
+}
+
+.logo img{
+    width: 258px;
+    height: 111px;
+}
+
+.menu-item {
+    display: block;
+    font-size: 18px; /* Font size for menu items */
+    color: #756958; /* Black color for text */
+    text-decoration: none;
+    padding: 16px;
+}
+
+.menu-item:hover{
+    color: #000000;
+}
+
+.footer {
+    font-size: 16px; /* Standard font size for footer text */
+    line-height: 1.6; /* Line spacing for readability */
+    color: #666666; /* Medium gray for text */
+    text-align: center;
+    padding-top: 16px;
+}
+
+.footer p {
+    font-weight: bold;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.footer .terms{
+    margin-top: 24px;
+}
+
+select {
+    width: 50%; /* Full width for the select box */
+    padding: 8px; /* Padding for appearance */
+    margin-top: 24px;
+    border-radius: 5px;
+    margin-bottom: 48px;
+    border: 1px solid #dddddd; /* Light gray border to match the menu */
+    color: black; /* Dark gray text color */
+    background-color: #ffffff; /* White background color for select box */
+}

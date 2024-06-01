@@ -1,0 +1,50 @@
+.room-div{
+    display: flex;
+    padding: 20px;
+}
+
+.room-img{
+    width: 600px;
+    margin-right: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.info ul{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.info h1{
+    color: #756958;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-container button{
+    background-color: #395847;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px 25px;
+}
+
+.button-container p{
+    font-family: sans-serif;
+}

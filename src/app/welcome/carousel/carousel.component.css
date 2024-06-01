@@ -5,8 +5,9 @@
 }
   
 .slider img {
-    width: 100%;
+    width: 100% !important;
     object-fit: cover;
+    display: block;
 }
   
 .arrow {

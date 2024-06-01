@@ -1,0 +1,12 @@
+<div class="slider">
+    <img [src]="images[currentImageIndex]" alt="Image slider">
+    <button class="arrow left-arrow" (click)="showPreviousImage()">&lt;</button>
+    <button class="arrow right-arrow" (click)="showNextImage()">&gt;</button>
+    <div class="dots">
+        <span *ngFor="let img of images; let i = index" 
+              [class.active]="i === currentImageIndex"
+              (click)="setCurrentImageIndex(i)">
+        </span>
+    </div>
+</div>
+  

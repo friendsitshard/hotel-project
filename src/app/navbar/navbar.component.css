@@ -56,7 +56,7 @@
     margin-top: 24px;
 }
 
-select {
+.footer select {
     width: 50%; /* Full width for the select box */
     padding: 8px; /* Padding for appearance */
     margin-top: 24px;
@@ -65,4 +65,5 @@ select {
     border: 1px solid #dddddd; /* Light gray border to match the menu */
     color: black; /* Dark gray text color */
     background-color: #ffffff; /* White background color for select box */
+    outline: none;
 }

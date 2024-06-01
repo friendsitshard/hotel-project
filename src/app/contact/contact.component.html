@@ -1,1 +1,74 @@
-<p>contact works!</p>
+<app-header></app-header>
+<div class="all">
+    <div class="contact-page">
+      <div class="contact-info">
+        <h2 class="h22">Contact us</h2>
+        <p><strong class="ss">Hotel Manofa</strong></p>
+        <p>Damrak 46-48<br>1012 LL Amsterdam<br>+31 20 622 09 90<br>frontdesk&#64;manofa-hotel.com</p>
+      </div>
+      <div class="contact-form">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  
+          <div *ngIf="successMessage" class="success-message">
+            {{ successMessage }}
+          </div>
+  
+          <div *ngIf="errorMessage" class="error-container">
+            <p class="error-message">{{ errorMessage }}</p>
+          </div>
+  
+          <div class="form-group">
+            <label for="name">Name</label>
+            <div class="input-container">
+              <input id="name" formControlName="name" type="text" class="form-control"
+                [ngClass]="{'valid-input': contactForm.get('name')?.valid && contactForm.get('name')?.touched, 'invalid-input': contactForm.get('name')?.invalid && contactForm.get('name')?.touched}" />
+              <span *ngIf="contactForm.get('name')?.valid && contactForm.get('name')?.touched" class="input-icon valid-icon">&#10003;</span>
+              <span *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="input-icon invalid-icon">&#10007;</span>
+            </div>
+          </div>
+          <hr>
+  
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <div class="input-container">
+              <input id="email" formControlName="email" type="email" class="form-control"
+                [ngClass]="{'valid-input': contactForm.get('email')?.valid && contactForm.get('email')?.touched, 'invalid-input': contactForm.get('email')?.invalid && contactForm.get('email')?.touched}" />
+              <span *ngIf="contactForm.get('email')?.valid && contactForm.get('email')?.touched" class="input-icon valid-icon">&#10003;</span>
+              <span *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="input-icon invalid-icon">&#10007;</span>
+            </div>
+            <small>We will send a reply to this email address.</small>
+          </div>
+          <hr>
+  
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <div class="input-container">
+              <input id="phone" formControlName="phone" type="text" class="form-control"
+                [ngClass]="{'valid-input': contactForm.get('phone')?.valid && contactForm.get('phone')?.touched, 'invalid-input': contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched}" />
+              <span *ngIf="contactForm.get('phone')?.valid && contactForm.get('phone')?.touched" class="input-icon valid-icon">&#10003;</span>
+              <span *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched" class="input-icon invalid-icon">&#10007;</span>
+            </div>
+            <small>We will use your telephone number if we need to contact you about your question.</small>
+          </div>
+          <hr>
+  
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" formControlName="message" class="form-control"></textarea>
+          </div>
+          <hr>
+  
+          <div class="form-group checkbox-div">
+            <label for="prevent-spam"> * Click below to prevent spam</label>
+            <input type="checkbox" id="prevent-spam">
+          </div>
+          <hr>
+          
+          <p class="privacy-note"><small>We only use your personal data for answering your question and will not use this information for anything else.</small></p>
+          <hr>
+          <button type="submit" class="btn btn-primary">Send</button>
+          <hr>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,225 @@
+.contact-page {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  p{
+    padding: 0 10px;
+    line-height: 1.8;
+  }
+  .ss{
+    font-size: 15px;
+  
+  }
+  input{
+    width: 100%;
+    padding: 12px 20px;
+  }
+  .h22{
+    font-weight: 1000;
+    color: rgba(114, 86, 50, 0.851);
+    font-size: 25px;
+    margin-bottom: -10px;
+    margin-left: -3px;
+    padding:0 10px ;
+  }
+  .contact-info {
+    width: 30%;
+    margin-top: 80px;
+    margin-left: 100px;
+  
+  }
+  input{
+    font-weight: 600;
+    font-size: 17px;
+  }
+  
+
+  
+  .contact-form {
+
+    width: 38%;
+    margin-right: 80px;
+    margin-top: 140px;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 16px;       /* Font size for the label text */
+    color: #333;           /* Text color */
+    display: block;        /* Display as block element */
+    margin-bottom: 10px;
+
+
+}
+textarea#message {
+  font-size: 17px;
+  font-weight: 600;
+  height: 120px;          /* Height for the textarea */
+  padding: 20px;          /* Padding inside the textarea */
+  background-color: #efefefbe; /* Background color for the textarea */
+  resize: vertical;       /* Allow vertical resizing */
+}
+
+
+  .form-control {
+    width: 93%;
+
+   background-color: #efefefbe;
+    box-sizing: border-box;
+    border: none;
+    align-content: center;
+    outline: none;
+
+  }
+  
+  small {
+    display: block;
+    margin-top: 5px;
+    color: #000000;
+    font-size: 12.4px;
+    width: 93%;
+  }
+  
+  hr {
+    margin: 20px 0px 20px -25px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .privacy-note {
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .btn-primary {
+    background-color: #0b2c12d0;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  
+  .error-container {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .error-message {
+    color: red; 
+    text-align: center;
+  }
+  
+  .error-message {
+    background-color: #f8d7da; 
+    color: red;
+    border: 1px solid #f5c6cb; 
+    padding: 20px;
+    border-radius: 5px;
+
+
+    text-align: center; 
+margin: -35px 22px 20px 0;
+  }
+  
+  
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  
+  
+  .has-error input {
+    border-color: red;
+  }
+  
+  .has-success input {
+    border-color: green;
+  }
+  
+  
+  .checkbox-input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-label {
+    font-size: 16px;
+  }
+
+
+  .valid-input {
+    border-color: green;
+    border: 1px solid #a4d2af;
+    background-color: #e6ffe6; /* light green background */
+  }
+  
+  .invalid-input {
+    border-color: red;
+    border: 1px solid #f5c6cb; 
+    background-color: #ffe6e6; /* light red background */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .form-group span {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container input {
+    padding-right: 30px; /* Adjust padding to make space for the icon */
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    margin-left: -30px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    pointer-events: none; /* Ensure the icon does not interfere with input focus */
+  }
+  
+  .valid-icon {
+    color: green;
+  }
+  
+  .invalid-icon {
+    color: rgb(128, 23, 0);
+  }
+  
+  .valid-input {
+    border-color: green;
+    background-color: #e6ffe6; /* light green background */
+  }
+  
+  .invalid-input {
+    border-color: red;
+    background-color: #ffe6e6; /* light red background */
+  }

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+.info-container{
+    font-family: din;
+    padding: 20px 100px;
+}
+
+.info-container h1{
+    color: #756958;
+}
+
+.info-container p{
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+.panels{
+    margin-top: 70px;
+    display: flex;
+    padding: 0px 60px;
+    color: white;
+    justify-content: space-between;
+}
+
+.panels div{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+
+.discount-panel h2{
+    background-color: #756958;
+    padding: 30px 10px;
+}
+
+.discount-panel img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.rooms-panel h2{
+    background-color: #756958;
+    padding: 30px 10px;
+    margin-bottom: 0;
+}
+
+.rooms-panel img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.sm-panels{
+    margin-top: 100px;
+    display: flex;
+    width: 600px;
+    padding: 0px 100px;
+    justify-content: space-between;
+}
+
+.prefered{
+    border: 1px black solid;
+    height: fit-content;
+    padding: 7px;
+}
+
+.rate{
+    border: 2px black solid;
+    border-radius: 3px;
+    text-align: center;
+    padding: 7px;
+}
+
+.rate h4{
+    font-size: 48px;
+    margin: 0px;
+}
+
+.rate p{
+    margin: 0px;
+}
+
+.rate p:first-child{
+    font-size: 11px;
+}

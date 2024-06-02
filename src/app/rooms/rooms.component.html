@@ -1,22 +1,22 @@
 <div>
-    <div *ngIf="data">
-  <div *ngFor="let room of data" class="room-div">
-    <img [src]="room.image" alt="" class="room-img">
-    <div class="info">
-      <div>
-        <h1>{{ room.name }}</h1>
-        <ul>
-          <li>{{ room.description }}</li>
-          <li>Default Price: {{ room.defaultPrice }}</li>
-          <li>Maximum Adults: {{ room.maxAdult }}</li>
-          <li>Maximum Children: {{ room.maxChildren }}</li>
-        </ul>
-      </div>
-      <div class="button-container">
-        <p>Starting price: € {{ room.defaultPrice }}</p>
-        <button>SHOW MORE</button>
+  <div *ngIf="data">
+    <div *ngFor="let room of data" class="room-div">
+      <img [src]="room.image" alt="Room Image" class="room-img">
+      <div class="info">
+        <div>
+          <h1>{{ room.name | titlecase }}</h1>
+          <ul>
+            <li>{{ room.description }}</li>
+            <li>Default Price: {{ room.defaultPrice | currency:'EUR' }}</li>
+            <li>Maximum Adults: {{ room.maxAdult }}</li>
+            <li>Maximum Children: {{ room.maxChildren }}</li>
+          </ul>
+        </div>
+        <div class="button-container">
+          <p>Starting price: {{ room.defaultPrice | currency:'USD':true }}</p>
+          <button>SHOW MORE</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

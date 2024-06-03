@@ -35,6 +35,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {
     if (this.loginForm.valid) {
+      this.service.isLogged = true
       this.axiosService.login('https://ketiketelauri123-001-site1.jtempurl.com/api/account/login', this.loginForm.value).subscribe({
         next: (data) => {
           console.log('Login successful', data);

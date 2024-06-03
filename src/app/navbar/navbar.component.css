@@ -67,3 +67,7 @@
     background-color: #ffffff; /* White background color for select box */
     outline: none;
 }
+
+.disabled{
+    pointer-events: none;
+}

@@ -4,17 +4,17 @@
     </div>
     <div class="menu">
         <hr>
-        <a routerLink="welcome" class="menu-item">Welcome</a>
+        <a [ngClass]="{ 'disabled': !service.isAuthenticated() }" routerLink="welcome" class="menu-item">Welcome</a>
         <hr>
-        <a class="menu-item">Hotel</a>
+        <a [ngClass]="{ 'disabled': !service.isAuthenticated() }" class="menu-item">Hotel</a>
         <hr>
-        <a routerLink="rooms" class="menu-item">Rooms</a>
+        <a [ngClass]="{ 'disabled': !service.isAuthenticated() }" routerLink="rooms" class="menu-item">Rooms</a>
         <hr>
-        <a class="menu-item">Location</a>
+        <a [ngClass]="{ 'disabled': !service.isAuthenticated() }" class="menu-item">Location</a>
         <hr>
-        <a class="menu-item">Restaurant</a>
+        <a [ngClass]="{ 'disabled': !service.isAuthenticated() }" class="menu-item">Restaurant</a>
         <hr>
-        <a routerLink="contact" class="menu-item">Contact</a>
+        <a [ngClass]="{ 'disabled': !service.isAuthenticated() }" routerLink="contact" class="menu-item">Contact</a>
         <hr>
     </div>
     <div class="footer">

@@ -21,4 +21,15 @@ export class AxiosService {
         });
     });
   }
+
+  login(url: string, credentials: any): Observable<any> {
+    return new Observable((observer) => {
+      axios.post(url, credentials).then((response) => {
+        observer.next(response.data);
+        observer.complete();
+      }).catch((error) => {
+        observer.error(error);
+      });
+    });
+  }
 }

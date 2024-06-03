@@ -19,7 +19,7 @@ export class CarouselComponent implements OnInit{
     this.axiosService.getData('https://ketiketelauri123-001-site1.jtempurl.com/api/roomtypes/getallroomtypewithimages')
       .subscribe({
         next: (data) => {
-          this.images = data.map((item: { image: any; }) => item.image); // Assuming 'data' is an array of objects with 'image' properties
+          this.images = data.map((item: { image: any; }) => item.image); 
         },
         error: (error) => {
           console.error('Error fetching images:', error);
@@ -35,7 +35,7 @@ export class CarouselComponent implements OnInit{
     if (this.currentImageIndex > 0) {
       this.currentImageIndex--;
     } else {
-      this.currentImageIndex = this.images.length - 1; // Wrap around to the last image
+      this.currentImageIndex = this.images.length - 1; 
     }
   }
 
